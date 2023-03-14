@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="start()" >bắt đầu</button>
+    
+    <script>
+        function start(){
+        let number = prompt("Nhập số: ");
+        let numberRan= Math.floor(Math.random()*number);
+        console.log(numberRan);
+        let numberCheck=prompt("Nhập số bạn đoán:");
+        let count = 0;
+        while(numberCheck != numberRan){
+            count++
+            if(count==4){
+                alert("Bạn đã hết số lần nhập")
+                break;
+            } else if (numberCheck<numberRan){
+                alert("số bạn đoán bé hơn")
+            }     else{
+                alert("số bạn đoán lớn hơn")
+            }
+            numberCheck=prompt("Nhập số bạn đoán");
+        }
+        if (count==4){
+            document.write("Bạn đã hết số lần đoán")
+        } else{
+            document.write("CHÚC MỪNG,BẠN ĐÃ ĐOÁN ĐÚNG")
+        
+        }
+    }
+
+    </script>
+</body>
+</html>

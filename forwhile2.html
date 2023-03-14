@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        do{
+            var nD=prompt("Nhập thông tin nhiệt độ hiện tại: ");
+            if(nD>100){
+                alert("vui lòng tăng nhiệt độ")
+            }
+            if(nD<20){
+                alert("vui lòng giảm nhiệt độ")
+            }
+            if(nD<100 && nD>20){
+                alert("Nhiệt độ bình thường")
+                break;
+            }
+            
+        } while(true);
+
+    </script>
+    
+</body>
+</html>
